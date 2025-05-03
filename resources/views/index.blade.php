@@ -100,7 +100,7 @@
             <a href="{{ url('/company-profile') }}">Company's Profile</a>
             <a href="{{ url('/reservation') }}">Reservation</a>
             <a href="{{ url('/contact') }}">Contact</a>
-            <a href="{{ url('/admin/login') }}" class="btn btn-outline-light">Admin</a>
+<a href="{{ route('admin.login.form') }}" class="btn btn-outline-light">Admin</a>
         </div>
     </div>
 
