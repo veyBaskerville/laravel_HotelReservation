@@ -118,7 +118,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container my-5">
         <h1>Reservations List</h1>
         <a href="#" class="btn btn-add" data-bs-toggle="modal" data-bs-target="#addReservationModal">Add Reservation</a>
         <table>
