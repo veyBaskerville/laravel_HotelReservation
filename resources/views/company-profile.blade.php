@@ -17,7 +17,7 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cormorant Garamond'; }
         body {
-            background-image: url('{{ asset('images/bggg.jpg') }}');
+            background-image: url("{{ asset('images/bggg.jpg') }}");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -56,7 +56,7 @@
             <a href="{{ url('/company-profile') }}">Company's Profile</a>
             <a href="{{ url('/reservation') }}">Reservation</a>
             <a href="{{ url('/contact') }}">Contact</a>
-        <a href="#" class="btn btn-outline-light">Admin</a>
+            <a href="{{ route('admin.login.form') }}" class="btn btn-outline-light">Admin</a>
     </div>
 </div>
 

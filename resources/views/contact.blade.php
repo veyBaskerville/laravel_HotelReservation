@@ -13,7 +13,7 @@
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cormorant Garamond'; }
-        body { background-image: url('{{ asset('images/bggg.jpg') }}'); background-size: cover; background-position: center; background-attachment: fixed; color: white; }
+        body { background-image: url("{{ asset('images/bggg.jpg') }}"); background-size: cover; background-position: center; background-attachment: fixed; color: white; }
         .navbar { display: flex; justify-content: space-between; background: #2C261E; padding: 10px 20px; align-items: center; z-index: 1000; }
         .navbar .logo { font-size: 24px; color: white; font-weight: bold; }
         .navbar a { color: white; text-decoration: none; padding: 10px 20px; font-size: 20px; }

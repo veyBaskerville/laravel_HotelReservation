@@ -16,7 +16,7 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
         body {
-            background-image: url('{{ asset('images/bggg.jpg') }}');
+            background-image: url("{{ asset('images/bggg.jpg') }}");
             background-size: cover;
             background-position: center;
             color: white;
@@ -94,13 +94,13 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">Tranquessa Admin</div>
+        <div class="logo">Tranquessa</div>
         <div class="nav-links">
             <a href="{{ url('/') }}">Home</a>
             <a href="{{ url('/company-profile') }}">Company's Profile</a>
             <a href="{{ url('/reservation') }}">Reservation</a>
             <a href="{{ url('/contact') }}">Contact</a>
-<a href="{{ route('admin.login.form') }}" class="btn btn-outline-light">Admin</a>
+            <a href="{{ route('admin.login.form') }}" class="btn btn-outline-light">Admin</a>
         </div>
     </div>
 
@@ -110,7 +110,7 @@
             <p class="fs-5">Escape the ordinary and indulge in a world of comfort, elegance, and tranquility.<br> 
                 Whether you're seeking a peaceful retreat or a lavish getaway, your perfect stay begins here.<br> 
                 Book your stay now and experience true relaxation.</p>
-            <button onclick="window.location.href='{{ url('/reservation') }}'">Make a Reservation</button>
+            <a href="{{ url('/reservation') }}"><button>Make a Reservation</button></a>
 
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
                 <div class="col">

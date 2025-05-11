@@ -16,7 +16,7 @@
 <style>
       * { margin: 0; padding: 0; box-sizing: border-box;  }
         body { 
-            background-image: url('{{ asset('images/bggg.jpg') }}');
+            background-image: url("{{ asset('images/bggg.jpg') }}");
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
@@ -140,7 +140,7 @@
             <a href="{{ url('/company-profile') }}">Company's Profile</a>
             <a href="{{ url('/reservation') }}">Reservation</a>
             <a href="{{ url('/contact') }}">Contact</a>
-        <a href="{{ url('/admin/login') }}" class="btn btn-outline-light">Admin</a>
+            <a href="{{ route('admin.login.form') }}" class="btn btn-outline-light">Admin</a>
     </div>
 </div>
 

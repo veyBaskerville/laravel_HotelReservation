@@ -24,8 +24,8 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/admin-login', [AdminController::class, 'showLoginForm'])->name('admin.login.form');
 Route::post('/admin-login', [AdminController::class, 'login'])->name('admin.login');
-// Route::post('/admin/add-reservation', [AdminController::class, 'addReservation'])->name('admin.add.reservation');
-// Route::post('/admin/edit-reservation', [AdminController::class, 'editReservation'])->name('admin.edit.reservation');
+Route::post('/admin/add-reservation', [AdminController::class, 'addReservation'])->name('admin.add.reservation');
+Route::post('/admin/edit-reservation', [AdminController::class, 'editReservation'])->name('admin.edit.reservation');
 Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 

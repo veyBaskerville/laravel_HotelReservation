@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Cormorant', serif;
-            background: url('{{ asset('images/bggg.jpg') }}') no-repeat center center fixed;
+            background: url("{{ asset('images/bggg.jpg') }}") no-repeat center center fixed;
             background-size: cover;
             display: flex;
             justify-content: center;

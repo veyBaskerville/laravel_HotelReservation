@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap">
     <style>
         body {
-            background-image: url('{{ asset('images/bggg.jpg') }}');
+            background-image: url("{{ asset('images/bggg.jpg') }}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -150,8 +150,8 @@
                         <td>{{ $res->created_at }}</td>
                         <td>
                             <button class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#editReservationModal" 
-                                    onclick="populateEditModal({{ $res->id }}, '{{ $res->name }}', '{{ $res->contact_number }}', '{{ $res->reservation_from }}', '{{ $res->reservation_to }}', '{{ $res->room_type }}', '{{ $res->room_capacity }}', '{{ $res->payment_type }}')">Edit</button>
-                            <button class="btn btn-delete" onclick="openDeleteModal({{ $res->id }})">Delete </button>
+                                    onclick="populateEditModal('{{ $res->id }}', '{{ $res->name }}', '{{ $res->contact_number }}', '{{ $res->reservation_from }}', '{{ $res->reservation_to }}', '{{ $res->room_type }}', '{{ $res->room_capacity }}', '{{ $res->payment_type }}')">Edit</button>
+                            <button class="btn btn-delete" onclick="openDeleteModal('{{ $res->id }}')">Delete </button>
                         </td>
                     </tr>
                 @endforeach

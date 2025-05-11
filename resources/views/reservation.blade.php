@@ -13,7 +13,7 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
         body { 
-            background-image: url('{{ asset('images/bggg.jpg') }}');
+            background-image: url("{{ asset('images/bggg.jpg') }}");
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
@@ -155,7 +155,7 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">Tranquessa Admin</div>
+        <div class="logo">Tranquessa</div>
         <div class="nav-links">
             <a href="{{ url('/') }}">Home</a>
             <a href="{{ url('/company-profile') }}">Company's Profile</a>
